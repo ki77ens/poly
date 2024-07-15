@@ -21,11 +21,11 @@ public:
         : malwareCode(code), gen(generator) {}
 
     void mutate() override {
-        uniform_int_distribution<> mutation_type_dis(0, 4); // Increased range for mutation types
+        uniform_int_distribution<> mutation_type_dis(0, 4); 
         uniform_int_distribution<> index_dis(0, malwareCode.size() - 1);
-        uniform_int_distribution<> increment_dis(10, 50); // Increased range for increment
+        uniform_int_distribution<> increment_dis(10, 50); 
         uniform_int_distribution<> replacement_dis(1, 100);
-        uniform_int_distribution<> shift_dis(-5, 5); // New mutation: shift values up or down
+        uniform_int_distribution<> shift_dis(-5, 5); 
 
         int mutation_type = mutation_type_dis(gen);
 
@@ -58,7 +58,7 @@ public:
         case 4: {
             for (int& value : malwareCode) {
                 value += shift_dis(gen);
-                if (value < 0) value = 0; // Ensuring no negative values
+                if (value < 0) value = 0; 
             }
             break;
         }
