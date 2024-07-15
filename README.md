@@ -3,6 +3,7 @@
 This project simulates the mutation of malware code represented by integers. The `IntegerMalware` (will prob change) class provides a method to mutate its code using various mutation techniques. The project demonstrates these mutations through a series of iterations.
 
 ### its kinda buggy sorry
+[blog on how polymorphism works](https://0x00sec.org/t/what-the-frick-is-a-polymorphic-engine/41059)
 
 ## Features
 
