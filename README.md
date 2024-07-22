@@ -1,26 +1,19 @@
 # polymorphism basic concept
 
-This project simulates the mutation of malware code represented by integers. The `IntegerMalware` (will prob change) class provides a method to mutate its code using various mutation techniques. The project demonstrates these mutations through a series of iterations.
+poly woly
 
 ### its kinda buggy sorry
 [blog on how polymorphism works](https://0x00sec.org/t/what-the-frick-is-a-polymorphic-engine/41059)
 
-## Features
+## how this thang workin
 
-- **Mutation Types**:
   - Increment a random element by a value between 10 and 50.
   - Replace a random element with a value between 1 and 100.
   - Swap two random elements.
   - Shuffle the entire code sequence.
   - Shift all elements up or down by a value between -5 and 5, ensuring no negative values.
 
-## Requirements
-
-- A C++17 compatible compiler (e.g., GCC, Clang, MSVC)
-
 ## Compilation
-
-To compile the program, use the following command:
 
 ```g++ -std=c++17 -o main main.cpp```
 
